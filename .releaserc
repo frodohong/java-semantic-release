@@ -3,7 +3,18 @@
      "repositoryUrl": "https://github.com/frodohong/java-semantic-release",
      "debug": "true",
      "plugins": [
-        "@semantic-release/commit-analyzer",
+          
+        ["@semantic-release/commit-analyzer", {
+      "releaseRules": [
+    {"type": "HOTFIX", "release": "patch"},   
+        {"type": "PATCH", "release": "patch"},
+        {"type": "MINOR", "release": "minor"},
+        {"type": "MAJOR", "release": "major"}
+      ],
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+      }
+    }],
         "@semantic-release/release-notes-generator",
         [
             "@semantic-release/changelog",
