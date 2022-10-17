@@ -1,5 +1,7 @@
 # Semantic Versioning Changelog
 
+# [2.0.0](https://github.com/frodohong/java-semantic-release/compare/v1.2.2...v2.0.0) (2022-10-17)
+
 ## [1.2.2](https://github.com/frodohong/java-semantic-release/compare/v1.2.1...v1.2.2) (2022-10-17)
 
 ## [1.2.1](https://github.com/frodohong/java-semantic-release/compare/v1.2.0...v1.2.1) (2022-10-17)
