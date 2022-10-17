@@ -15,7 +15,35 @@
         "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
       }
     }],
-        "@semantic-release/release-notes-generator",
+[
+      "@semantic-release/release-notes-generator",
+      {
+        "writerOpts": {
+          "types": [
+            {
+              "type": "MAJOR",
+              "section": "MAJOR",
+              "hidden": false
+            },
+            {
+              "type": "MINOR",
+              "section": "MINOR",
+              "hidden": false
+            },
+            {
+              "type": "PATCH",
+              "section": "PATCH",
+              "hidden": false
+            },
+            {
+              "type": "HOTFIX",
+              "section": "HOTFIX",
+              "hidden": false
+            }
+          ]
+        }
+      }
+    ],
         [
             "@semantic-release/changelog",
             {
