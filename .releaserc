@@ -18,7 +18,8 @@
 [
       "@semantic-release/release-notes-generator",
       {
-        "writerOpts": {
+         "preset": "conventionalcommits",
+        "presetConfig": {
           "types": [
             {
               "type": "MAJOR",
